@@ -1,0 +1,131 @@
+<!--
+Part 1. Introduction to HTML
+Step 0. Create a new HTML file named index.html
+Add the basic HTML boilerplate (<!DOCTYPE html>, <html>,
+<head>, <title>, <body>).
+Title your page as "My First Webpage".
+Step 1. Structure text using HTML tags
+Add headings <h1> to <h3> with your name, course, and "About Me".
+Add a short paragraph <p> describing yourself.
+Step 2. HTML Lists
+Create an ordered list <ol> of your hobbies.
+Create an unordered list <ul> of your favorite websites.
+Step 3. Images and Links
+Insert your photo using the <img> tag.
+Add at least two clickable links with <a> (e.g., to your favorite websites).
+
+Step 4. HTML Buttons
+Add a simple button with text "Click Me". (No functionality required yet).
+Part 2. Intermediate HTML
+Step 5. Tables
+Create a table with 3 columns: "Subject", "Day", "Time".
+Fill in a simple weekly class schedule.
+Step 6. Using Tables for Layout (Optional Challenge)
+Create a two-column layout using a table: left column (menu), right column (main content).
+Step 7. Typing Emojis
+Add at least 3 emojis inside a paragraph about your mood today.
+Step8. HTML Forms
+Create a form with the following fields:
+Name (text input)
+Email (email input)
+Favorite Color (color input)
+A Submit button
+Step 9. Publish Your First Website
+Use GitHub Pages or Netlify to publish your home.html.
+Submit the URL link along with your files.
+
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+    <style>
+        .top-align{
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <table cellspacing ="20">
+        <td>
+            <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/09/19/17/mark-zuckerberg-2.jpg?quality=75&width=1368&auto=webp" width="400">
+        </td>
+        <td>
+            <h1>Abylaikhan Janmolda</h1>
+            <h2>Web Technologies1</h2>    
+            <h3>About me:</h3>
+    <p>I love Derrick Rose</p>
+        </td>
+    </table>
+
+    <hr>
+    <table cellspacing ="30" align = "center">
+        <td class = "top-align">
+            <h2>My hobbies</h2>
+        <ol>
+            <li>football</li>
+            <li>chess</li>
+            <li>coding</li>
+        </ol>
+        </td>
+        <td class = "top-align">
+            <h2>My favorite websites</h2>
+            <ul>
+                <li><a href="http://youtube.com">youtube</a></li>
+                <li><a href="http://chatgpt.com">chatgpt</a></li>
+                <li><a href="http://lipsum.org">lorem ipsum</a></li>
+            </ul>
+        </td>
+        <td class = "top-align">
+            <h2>Non functional buttons</h2>
+            <button>Click me</button>
+            <button>Click me</button>
+            <button>Click me</button>
+            <button>Click me</button>
+        </td>
+        <td class = "top-align">
+            <h2 align = "center">My imaginary schedule</h2>
+            <table border="1">
+                <tr>
+                    <th>Subject</th>
+                    <th>Day</th>
+                    <th>Time</th>
+                </tr>
+                <tr>
+                    <td>Software Design Patterns</td>
+                    <td>Monday</td>
+                    <td>8:00</td>
+                </tr>
+                <tr>
+                    <td>Operating Systems</td>
+                    <td>Tuesday</td>
+                    <td>13:00</td>
+                </tr>
+                <tr>
+                    <td>web Technologies 1</td>
+                    <td>Wensday</td>
+                    <td>14:00</td>
+                </tr>
+            </table>
+        </td>
+    </table>
+    <hr>
+    <p>Today I’m in a really good mood&#129305; — feeling light, positive, and motivated to enjoy the day and get things done with a smile.&#128515;&#128077;</p>
+    <hr>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        <br><br>
+        <input type="submit" value="Submit Form">
+    </form>
+    
+
+</body>
+</html>
